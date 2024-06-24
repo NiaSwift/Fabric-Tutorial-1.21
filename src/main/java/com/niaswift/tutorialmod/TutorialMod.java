@@ -1,5 +1,7 @@
 package com.niaswift.tutorialmod;
 
+import com.niaswift.tutorialmod.item.ModItemGroups;
+import com.niaswift.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +13,9 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
+        ModItemGroups.registerItemGroups();
+        ModItems.registerModItems();
 
 	}
 }
