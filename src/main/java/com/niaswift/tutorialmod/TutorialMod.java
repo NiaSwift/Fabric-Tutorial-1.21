@@ -1,5 +1,6 @@
 package com.niaswift.tutorialmod;
 
+import com.niaswift.tutorialmod.block.ModBlocks;
 import com.niaswift.tutorialmod.item.ModItemGroups;
 import com.niaswift.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -15,7 +16,9 @@ public class TutorialMod implements ModInitializer {
 	public void onInitialize() {
 
         ModItemGroups.registerItemGroups();
+
         ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
 
 	}
 }
