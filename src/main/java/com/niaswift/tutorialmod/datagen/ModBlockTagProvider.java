@@ -57,6 +57,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider{
         getOrCreateTagBuilder(BlockTags.INCORRECT_FOR_IRON_TOOL).forceAddTag(ModTags.Blocks.NEEDS_NETHERITE_TOOL);
         getOrCreateTagBuilder(BlockTags.INCORRECT_FOR_DIAMOND_TOOL).forceAddTag(ModTags.Blocks.NEEDS_NETHERITE_TOOL);
 
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.RUBY_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.RUBY_FENCE_GATE);
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.RUBY_WALL);
+
     }
 
 }
