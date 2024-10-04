@@ -22,6 +22,9 @@ public class ModItems {
     public static final Item METAL_DETECTOR = registerItem("metal_detector",
             new MetalDetectorItem(new Item.Settings().maxDamage(64)));
 
+    public static final Item RUBY_STAFF = registerItem("ruby_staff",
+            new Item(new Item.Settings().maxCount(1)));
+
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);
         entries.add(RAW_RUBY);
