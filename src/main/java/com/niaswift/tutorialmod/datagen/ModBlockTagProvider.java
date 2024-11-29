@@ -4,9 +4,13 @@ import com.niaswift.tutorialmod.block.ModBlocks;
 import com.niaswift.tutorialmod.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.block.Block;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.TagKey;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider{
@@ -51,11 +55,22 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider{
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(ModBlocks.END_STONE_RUBY_ORE);
 
-        getOrCreateTagBuilder(BlockTags.INCORRECT_FOR_WOODEN_TOOL).forceAddTag(ModTags.Blocks.NEEDS_NETHERITE_TOOL);
-        getOrCreateTagBuilder(BlockTags.INCORRECT_FOR_GOLD_TOOL).forceAddTag(ModTags.Blocks.NEEDS_NETHERITE_TOOL);
-        getOrCreateTagBuilder(BlockTags.INCORRECT_FOR_STONE_TOOL).forceAddTag(ModTags.Blocks.NEEDS_NETHERITE_TOOL);
-        getOrCreateTagBuilder(BlockTags.INCORRECT_FOR_IRON_TOOL).forceAddTag(ModTags.Blocks.NEEDS_NETHERITE_TOOL);
-        getOrCreateTagBuilder(BlockTags.INCORRECT_FOR_DIAMOND_TOOL).forceAddTag(ModTags.Blocks.NEEDS_NETHERITE_TOOL);
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_RUBY_TOOL)
+                .add(ModBlocks.SOUND_BLOCK);
+
+
+        List<TagKey<Block>> needsTool = new ArrayList<>();
+        needsTool.add(ModTags.Blocks.NEEDS_NETHERITE_TOOL);
+        needsTool.add(ModTags.Blocks.NEEDS_RUBY_TOOL);
+        for (TagKey<Block> x : needsTool) {
+            getOrCreateTagBuilder(BlockTags.INCORRECT_FOR_WOODEN_TOOL).forceAddTag(x);
+            getOrCreateTagBuilder(BlockTags.INCORRECT_FOR_GOLD_TOOL).forceAddTag(x);
+            getOrCreateTagBuilder(BlockTags.INCORRECT_FOR_STONE_TOOL).forceAddTag(x);
+            getOrCreateTagBuilder(BlockTags.INCORRECT_FOR_IRON_TOOL).forceAddTag(x);
+            getOrCreateTagBuilder(BlockTags.INCORRECT_FOR_DIAMOND_TOOL).forceAddTag(x);
+        }
+        getOrCreateTagBuilder(BlockTags.INCORRECT_FOR_NETHERITE_TOOL).forceAddTag(ModTags.Blocks.NEEDS_RUBY_TOOL);
+
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(ModBlocks.RUBY_FENCE);

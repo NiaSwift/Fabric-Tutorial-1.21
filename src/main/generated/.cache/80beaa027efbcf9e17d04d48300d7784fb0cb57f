@@ -1,15 +1,17 @@
-// 1.21	2024-10-02T19:46:07.4454521	Tutorial Mod/Tags for minecraft:block
+// 1.21	2024-11-29T04:46:27.7609876	Tutorial Mod/Tags for minecraft:block
 2027697e8146c81a04b2b16b27b2b44bf4bbe316 data\minecraft\tags\block\fences.json
 295cd34ed1368ceaf51c6e099eaf50d7b54a3f30 data\minecraft\tags\block\needs_diamond_tool.json
-7664313cfc03ddc8b1f4977341b906b3650c6ab5 data\minecraft\tags\block\incorrect_for_diamond_tool.json
-7664313cfc03ddc8b1f4977341b906b3650c6ab5 data\minecraft\tags\block\incorrect_for_wooden_tool.json
-7664313cfc03ddc8b1f4977341b906b3650c6ab5 data\minecraft\tags\block\incorrect_for_gold_tool.json
+e39703b2380df5862ea6915a293cbc5b3237cec7 data\minecraft\tags\block\incorrect_for_diamond_tool.json
+e39703b2380df5862ea6915a293cbc5b3237cec7 data\minecraft\tags\block\incorrect_for_wooden_tool.json
+e39703b2380df5862ea6915a293cbc5b3237cec7 data\minecraft\tags\block\incorrect_for_gold_tool.json
 a4294123f7f371444f081e1c96232753d00441fd data\minecraft\tags\block\walls.json
 6c1256fa8cc573945533ae1df24d1eeabeba8862 data\tutorialmod\tags\block\needs_netherite_tool.json
+cfae736341810a0345b58545ce6e6e88080ebf5c data\minecraft\tags\block\incorrect_for_netherite_tool.json
 e42b230fbdab7b3fcf573b8ac007e72721c8472a data\minecraft\tags\block\needs_iron_tool.json
 3e82c704aea4cea5d4face5a72484097c30b66e0 data\minecraft\tags\block\fence_gates.json
 4ac28976694fe3d48fa2f936db742870cb35746a data\minecraft\tags\block\mineable\pickaxe.json
-7664313cfc03ddc8b1f4977341b906b3650c6ab5 data\minecraft\tags\block\incorrect_for_stone_tool.json
-7664313cfc03ddc8b1f4977341b906b3650c6ab5 data\minecraft\tags\block\incorrect_for_iron_tool.json
+e39703b2380df5862ea6915a293cbc5b3237cec7 data\minecraft\tags\block\incorrect_for_stone_tool.json
+047901bdc4a4ba4a4f71e4ed5689a158c75088e3 data\tutorialmod\tags\block\needs_ruby_tool.json
+e39703b2380df5862ea6915a293cbc5b3237cec7 data\minecraft\tags\block\incorrect_for_iron_tool.json
 4eb2a68ba3f631abd50050ad2f815850e43899c4 data\minecraft\tags\block\needs_stone_tool.json
 bee419f345f9718e7f96ad8812100cf743eb478a data\tutorialmod\tags\block\metal_detector_detectable_blocks.json
